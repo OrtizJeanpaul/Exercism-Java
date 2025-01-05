@@ -12,6 +12,6 @@ public class Secrets {
     }
 
     public static int clearBits(int value, int mask) {
-        throw new UnsupportedOperationException("Please implement the Secrets.clearBits() method");
+        throw new UnsupportedOperationException("Please implemente Secrets.clearBits() method");
     }
 }
