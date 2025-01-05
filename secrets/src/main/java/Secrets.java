@@ -4,7 +4,7 @@ public class Secrets {
     }
 
     public static int setBits(int value, int mask) {
-        throw new UnsupportedOperationException("Please implement the (static) Secrets.setBits() method");
+        throw new UnsupportedOperationException(" implement the (static) Secrets.setBits() method");
     }
 
     public static int flipBits(int value, int mask) {
