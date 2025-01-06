@@ -1,6 +1,7 @@
 public class Secrets {
     public static int shiftBack(int value, int amount) {
-        return value >>> amount;
+        
+        return value >> amount;
     }
 
     public static int setBits(int value, int mask) {
