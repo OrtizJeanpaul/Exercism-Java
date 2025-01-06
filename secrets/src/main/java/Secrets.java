@@ -1,17 +1,17 @@
 public class Secrets {
     public static int shiftBack(int value, int amount) {
-        throw new UnsupportedOperationException("Please implement the (static) Secrets.shiftBack() method");
+        return value << 2;
     }
 
     public static int setBits(int value, int mask) {
-        throw new UnsupportedOperationException("  (static) Secets.setBits()");
+        return value | mask;
     }
 
     public static int flipBits(int value, int mask) {
-        throw new UnsupportedOperationException(" impleme crliits() method");
+        return value ^ mask;
     }
 
     public static int clearBits(int value, int mask) {
-        throw new UnsupportedOperationException("Please implemente Secrets.clearBits() method");
+        return value & ~mask;
     }
 }
