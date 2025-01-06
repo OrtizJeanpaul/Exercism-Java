@@ -32,7 +32,6 @@ class Warrior extends Fighter {
 }
 
 class Wizard extends Fighter {
-    @SuppressWarnings("unchecked")
     private boolean isSpellPrepared = false;
 
     public String toString() {
