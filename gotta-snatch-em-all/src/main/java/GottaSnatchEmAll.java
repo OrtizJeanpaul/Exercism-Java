@@ -18,18 +18,25 @@ class GottaSnatchEmAll {
     }
 
     static boolean canTrade(Set<String> myCollection, Set<String> theirCollection) {
-        if(myCollection.isEmpty() || theirCollection.isEmpty()){
+        Set<String> myUniqueCards = new HashSet<>(myCollection);
+        myUniqueCards.removeAll(theirCollection);
+
+        Set<String> theirUniqueCards = new HashSet<>(theirCollection);
+        theirUniqueCards.removeAll(myCollection);
+
+        if(myCollection.isEmpty() || theirCollection.isEmpty() || myUniqueCards.isEmpty() || theirCollection.isEmpty()){
             return false;
         }
-        Set<String> symmetricDifference = new HashSet<>(myCollection);
-        symmetricDifference.addAll(theirCollection);
+        // Set<String> symmetricDifference = new HashSet<>(myCollection);
+        // symmetricDifference.addAll(theirCollection);
 
-        Set<String> intersection = new HashSet<>(myCollection);
-        intersection.retainAll(theirCollection);
+        // Set<String> intersection = new HashSet<>(myCollection);
+        // intersection.retainAll(theirCollection);
 
-        symmetricDifference.removeAll(intersection);
+        // symmetricDifference.removeAll(intersection);
 
-        return symmetricDifference.size() > 0;
+        // return symmetricDifference.size() > 0;
+        return true;
     }
 
     static Set<String> commonCards(List<Set<String>> collections) {
