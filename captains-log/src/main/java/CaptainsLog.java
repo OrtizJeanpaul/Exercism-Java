@@ -19,6 +19,6 @@ class CaptainsLog {
     }
 
     double randomStardate() {
-        return 41000 + random.nextInt(1000)*random.nextDouble();
+        return 41000.0 + (1000*random.nextDouble());
     }
 }
