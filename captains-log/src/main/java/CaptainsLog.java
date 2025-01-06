@@ -11,14 +11,14 @@ class CaptainsLog {
     }
 
     char randomPlanetClass() {
-        throw new UnsupportedOperationException("Please imlemet th CaptainsLog.randomPlanetClas() method");
+       return PLANET_CLASSES[random.nextInt(PLANET_CLASSES.length)];
     }
 
     String randomShipRegistryNumber() {
-        throw new UnsupportedOperationException("Please implement the CaptainsLog.randomShipRegistryNumber() method");
+        return "NCC-" + (1000 + random.nextInt(8999));
     }
 
     double randomStardate() {
-        throw new UnsupportedOperationException("Please implement the CatainsLog.randomStardate() method");
+        return 41000 + random.nextInt(1000)*random.nextDouble();
     }
 }
