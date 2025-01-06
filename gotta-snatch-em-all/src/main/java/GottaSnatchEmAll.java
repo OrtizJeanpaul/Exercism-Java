@@ -24,7 +24,7 @@ class GottaSnatchEmAll {
         Set<String> theirUniqueCards = new HashSet<>(theirCollection);
         theirUniqueCards.removeAll(myCollection);
 
-        if(myCollection.isEmpty() || theirCollection.isEmpty() || myUniqueCards.isEmpty() || theirCollection.isEmpty()){
+        if(myCollection.isEmpty() || theirCollection.isEmpty() || myUniqueCards.isEmpty() || theirUniqueCards.isEmpty()){
             return false;
         }
         // Set<String> symmetricDifference = new HashSet<>(myCollection);
