@@ -18,6 +18,9 @@ class GottaSnatchEmAll {
     }
 
     static boolean canTrade(Set<String> myCollection, Set<String> theirCollection) {
+        if(myCollection.isEmpty() || theirCollection.isEmpty()){
+            return false;
+        }
         Set<String> symmetricDifference = new HashSet<>(myCollection);
         symmetricDifference.addAll(theirCollection);
 
@@ -40,7 +43,6 @@ class GottaSnatchEmAll {
 
     static Set<String> allCards(List<Set<String>> collections) {
         Set<String> fullCollection = new HashSet<>();
-
         for(int i = 0; i < collections.size(); i++){
             fullCollection.addAll(collections.get(i));
         }
