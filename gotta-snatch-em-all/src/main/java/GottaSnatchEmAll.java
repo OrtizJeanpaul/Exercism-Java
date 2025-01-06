@@ -4,9 +4,9 @@ import java.util.Set;
 class GottaSnatchEmAll {
 
     static Set<String> newCollection(List<String> cards) {
-        Set<String> collection = new HashSet<>();
+        Set<String> collection = new Set<>();
 
-        for(int i = 0; i < cards.length(); i++){
+        for(int i = 0; i < cards.size(); i++){
             collection.add(cards[i]);
         }
         return collection;
@@ -17,10 +17,10 @@ class GottaSnatchEmAll {
     }
 
     static boolean canTrade(Set<String> myCollection, Set<String> theirCollection) {
-        Set<String> symmetricDifference = new HashSet<>(myCollection);
+        Set<String> symmetricDifference = new Set<>(myCollection);
         symmetricDifference.addAll(theirCollection);
 
-        Set<String> intersection = new HashSet<>(myCollection);
+        Set<String> intersection = new Set<>(myCollection);
         intersection.retainAll(theirCollection);
 
         symmetricDifference.removeAll(intersection);
@@ -29,8 +29,8 @@ class GottaSnatchEmAll {
     }
 
     static Set<String> commonCards(List<Set<String>> collections) {
-        Set<String> dupeCards = new HashSet<>(collections[0]);
-        for(int i = 1; i < collections.length(); i++){
+        Set<String> dupeCards = new Set<>(collections[0]);
+        for(int i = 1; i < collections.size(); i++){
             dupeCards.retainAll(collections[i]);
         }
 
@@ -38,9 +38,9 @@ class GottaSnatchEmAll {
     }
 
     static Set<String> allCards(List<Set<String>> collections) {
-        Set<String> fullCollection = new HashSet<>();
+        Set<String> fullCollection = new Set<>();
 
-        for(int i = 0; i < collections.length(); i++){
+        for(int i = 0; i < collections.size(); i++){
             fullCollection.addAll(collections[i]);
         }
 
