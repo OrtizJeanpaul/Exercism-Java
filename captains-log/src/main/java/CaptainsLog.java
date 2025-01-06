@@ -11,7 +11,7 @@ class CaptainsLog {
     }
 
     char randomPlanetClass() {
-        throw new UnsupportedOperationException("Please implement th CaptainsLog.randomPlanetClas() method");
+        throw new UnsupportedOperationException("Please imlement th CaptainsLog.randomPlanetClas() method");
     }
 
     String randomShipRegistryNumber() {
