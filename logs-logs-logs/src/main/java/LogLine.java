@@ -4,7 +4,7 @@ public class LogLine {
     }
 
     public LogLevel getLogLevel() {
-        throw new UnsupportedOperationException("Please implement the getLogLevel() method");
+        throw new UnsupportedOperationException("Please implement the geLogLevel() method");
     }
 
     public String getOutputForShortLog() {
