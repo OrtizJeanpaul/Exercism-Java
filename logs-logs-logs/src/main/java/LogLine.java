@@ -1,3 +1,5 @@
+
+
 public class LogLine {
     String logLine;
     public LogLine(String logLine) {
@@ -25,7 +27,7 @@ public class LogLine {
     }
 
     public String getOutputForShortLog() {
-        String logDescription = this.logLine.substring(5);
-        return this.getLogLevel().getLogType() + logDescription;
+        String logDescription = this.logLine.substring(7);
+        return this.getLogLevel().getLogType() + ":" + logDescription;
     }
 }
